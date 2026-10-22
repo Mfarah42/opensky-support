@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenSky · Support</title>
+<meta name="description" content="Support and FAQ for OpenSky, the weather app that paints your sky and tells you what changed since you last looked. No account, no tracking.">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#E9E8E3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="OpenSky · Support">
+<meta property="og:description" content="Weather worth following. Support and FAQ for the OpenSky iOS app.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&display=swap">
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "OpenSky Weather",
+  "applicationCategory": "WeatherApplication",
+  "operatingSystem": "iOS",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#faq">Skip to FAQ</a>
+<nav aria-label="Site">
+  <div class="nav-inner">
+    <a class="nav-name serif" href="#top"><img src="icon.png" alt="" width="24" height="24"><span>OpenSky<span class="dot">.</span></span></a>
+    <div class="nav-links">
+      <a href="#faq" class="collapse">FAQ</a>
+      <a href="#contact" class="collapse">Contact</a>
+      <a href="mailto:support@simplemaf.com" class="collapse">Email</a>
+      <a href="privacy.html">Privacy</a>
+      <button id="themeBtn" class="theme-btn" type="button" aria-label="Switch theme" title="Theme: follows your system"><span id="themeIcon" aria-hidden="true">◐</span></button>
+      <a class="nav-cta" href="#" data-todo="appstore" aria-disabled="true" title="App Store listing coming soon">App&nbsp;Store</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap" id="top">
+  <span class="eyebrow">Support · OpenSky for iOS</span>
+  <h1 class="serif">Weather worth <em>following</em>.</h1>
+  <p class="lede">OpenSky paints your sky: your city, your horizon, the clouds the forecast is promising, lit the way the sun is lit right now. Underneath, a forecast you can follow. Pick a day that matters and OpenSky keeps every forecast it fetches for it, then tells you in one plain line what changed since you last looked. No account, no tracking, nothing leaves your phone.</p>
+  <div class="btn-row">
+    <a class="btn btn-clay" href="#" data-todo="appstore" aria-disabled="true" title="App Store listing coming soon">Download on the App&nbsp;Store</a>
+    <a class="btn btn-ghost" href="mailto:support@simplemaf.com">Email support</a>
+    <a class="btn btn-ghost" href="privacy.html">Privacy policy</a>
+  </div>
+  <div class="hero-note">
+    <img src="icon.png" alt="OpenSky app icon" width="40" height="40">
+    <span>Questions, feedback, and bug reports usually get a reply within a day.</span>
+  </div>
+</header>
+
+<section id="faq" class="wrap">
+  <div class="section-head" data-reveal>
+    <span class="eyebrow">FAQ</span>
+    <h2 class="serif">Frequently asked</h2>
+    <p>The questions that come up most, answered plainly.</p>
+  </div>
+  <div class="faq-list" data-reveal-group>
+    <details>
+      <summary class="serif">Where does the weather come from?</summary>
+      <div class="answer">
+        <p>Current conditions, the hourly and daily forecast, minute-by-minute precipitation and official alerts come from <b>Apple Weather</b> (WeatherKit). Air quality and pollen come from <b>Open-Meteo</b>. Every card says which. OpenSky never invents a confidence number: when two estimates disagree it shows both, the spread, and when each was retrieved.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">What does "Follow" do?</summary>
+      <div class="answer">
+        <p>Tap a day in the seven-day list and tap <b>Follow</b>. From then on OpenSky keeps every forecast it fetches for that day. When the forecast crosses a threshold (rain appears or disappears, the timing shifts, the high or low moves) you get one notification that says exactly what moved, in numbers. There is a six-hour cooldown per followed day, quiet hours from 10 pm to 7 am defer to the morning, and several changes collapse into one notice. Choose how sensitive this is under Settings.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">What is "What changed" comparing against?</summary>
+      <div class="answer">
+        <p>The forecast you last looked at. Not the previous model run, not a fixed number of hours ago. If nothing crossed a threshold since your last open, the line stays away, and that quiet means something too.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">What is Replay?</summary>
+      <div class="answer">
+        <p>Open a day you follow and scrub through its saved forecasts. The chart shows what each forecast said and when, so you can watch a prediction drift toward the truth. Replay only compares forecasts for the same place, the same day and the same source, so a change of provider is never shown as a change of weather.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">Why does my city have a different painting from my friend's?</summary>
+      <div class="answer">
+        <p>Eighty cities have their own hand-painted landmark, chosen when you are within fifteen miles of it. Everywhere else gets a scene for the region: meadow, desert, prairie, pine forest, rocky coast, tropical coast or mountain valley. The paintings are illustrations, not a camera view. Clouds, the sun, the moon, rain and snow are drawn live from the forecast on top of them.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">Does OpenSky need my location?</summary>
+      <div class="answer">
+        <p>Only if you want the forecast for where you are. Location is requested once, used only while the app is open, and never leaves your phone. Deny it and OpenSky shows a default city you can change. You can also save up to ten cities and follow days in any of them.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">What is special on iPhone Duo?</summary>
+      <div class="answer">
+        <p>Open the phone and the painting stays on the left at full height, with the 48 hours running down it. The forecast fills the right and scrolls on its own. The controls sit in the side strip beside the clock. The cover screen shows the regular phone layout.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">The widget says "Open to refresh". Why?</summary>
+      <div class="answer">
+        <p>iOS decides when widgets may refresh. When the last update is more than an hour old the widget says so instead of showing stale numbers as current. Opening OpenSky refreshes it at once. Widgets follow the city selected on the Today tab.</p>
+      </div>
+    </details>
+    <details>
+      <summary class="serif">Does OpenSky collect any data?</summary>
+      <div class="answer">
+        <p>No. There is no account, no analytics, no advertising, no tracking, and no server of ours. Forecast requests go to Apple Weather and Open-Meteo for the coordinates you chose, and that is all they receive.</p>
+        <a class="applink" href="privacy.html">Read the full privacy policy →</a>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="contact" class="wrap">
+  <div class="section-head" data-reveal>
+    <span class="eyebrow">Contact</span>
+    <h2 class="serif">Need a hand?</h2>
+  </div>
+  <div class="panel" data-reveal>
+    <p><span class="pulse"></span><b>Support is one email away</b></p>
+    <p>Write to <a href="mailto:support@simplemaf.com?subject=OpenSky%20Support">support@simplemaf.com</a> with your iOS version, your city and, if it helps, a screenshot. Feature ideas and favorite paintings are welcome too.</p>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p>Weather data from Apple Weather. Air quality from Open-Meteo. Official alerts keep their source's wording.</p>
+  <p>© 2026 Mohamed Farah · <a href="privacy.html">Privacy policy</a> · Fraunces typeface under the SIL Open Font License.</p>
+</footer>
+</body>
+</html>

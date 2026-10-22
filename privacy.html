@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenSky · Privacy Policy</title>
+<meta name="description" content="OpenSky privacy policy. No account, no analytics, no tracking, no server of ours. Location stays on your phone.">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#E9E8E3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&display=swap">
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#policy">Skip to policy</a>
+<nav aria-label="Site">
+  <div class="nav-inner">
+    <a class="nav-name serif" href="index.html"><img src="icon.png" alt="" width="24" height="24"><span>OpenSky<span class="dot">.</span></span></a>
+    <div class="nav-links">
+      <a href="index.html#faq" class="collapse">FAQ</a>
+      <a href="index.html#contact" class="collapse">Contact</a>
+      <a href="index.html">Support</a>
+      <button id="themeBtn" class="theme-btn" type="button" aria-label="Switch theme" title="Theme: follows your system"><span id="themeIcon" aria-hidden="true">◐</span></button>
+      <a class="nav-cta" href="mailto:support@simplemaf.com">Email support</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap">
+  <span class="eyebrow">Privacy · OpenSky for iOS</span>
+  <h1 class="serif">Your sky, and <em>nothing about you</em>.</h1>
+  <p class="lede">OpenSky has no account, no analytics, no advertising and no tracking. We operate no servers and receive no personal data from the app. Your location is used on your phone to ask Apple Weather and Open-Meteo for a forecast, and that is the whole story.</p>
+  <p class="updated" style="margin-top:18px">Last updated: October 22, 2026</p>
+</header>
+
+<section class="wrap" id="policy">
+  <div class="prose" data-reveal>
+    <div class="summary-box" aria-label="Summary">
+      <ul>
+        <li>Nothing you do in OpenSky is sent to us. We have no server.</li>
+        <li>No account, no analytics SDK, no crash-reporting SDK, no advertising, no tracking identifiers.</li>
+        <li>Your coordinates go to Apple Weather and Open-Meteo only to fetch a forecast for them, under those providers' own policies.</li>
+        <li>Followed days, saved forecasts, saved cities and settings live in the app's private storage on your phone.</li>
+      </ul>
+    </div>
+
+    <h2 class="serif">Location</h2>
+    <p>OpenSky asks for location permission once, "while using the app". It is used to pick the forecast for where you are, to center the radar, and to choose the painting for your area. Deny it and OpenSky shows a default city you can change. The coordinates are sent to Apple Weather (WeatherKit) and to Open-Meteo's air quality service to fetch forecasts, rounded to the precision those services need, and to no one else. OpenSky keeps no history of where you have been.</p>
+
+    <h2 class="serif">What the app stores, and where</h2>
+    <p>Saved cities, followed days, every forecast fetched for a followed day (so Replay and "What changed" can compare them), the last forecast for each place, notification preferences, voice, units and appearance. All of it lives in the app's private storage on your device. Widgets read the same storage through an App Group. OpenSky offers no cloud sync of its own; your device's own backup settings may include the app's data, under your control.</p>
+
+    <h2 class="serif">Weather providers</h2>
+    <p>Forecasts, alerts and minute precipitation come from Apple Weather through WeatherKit, under <a href="https://weatherkit.apple.com/legal-attribution.html">Apple's attribution and terms</a>. Air quality and pollen come from <a href="https://open-meteo.com/">Open-Meteo</a>. Requests carry the coordinates and nothing that identifies you. Official alerts are shown with their original wording and source.</p>
+
+    <h2 class="serif">Notifications</h2>
+    <p>If you allow notifications, OpenSky schedules them on your phone when a followed day's forecast crosses a threshold. They are generated locally from forecasts already on the device. No push server is involved and no token leaves the phone.</p>
+
+    <h2 class="serif">Sharing</h2>
+    <p>The share card leaves your phone only when you choose a destination in Apple's share sheet. It contains the painting, the readings and the correspondent's line, nothing about you.</p>
+
+    <h2 class="serif">Children</h2>
+    <p>OpenSky is rated 4+ and collects no data from anyone, of any age.</p>
+
+    <h2 class="serif">Changes</h2>
+    <p>If this policy changes, the new version is posted here with a new date. The app itself will never start collecting data without a new policy.</p>
+
+    <h2 class="serif">Contact</h2>
+    <p>Questions about privacy: <a href="mailto:support@simplemaf.com?subject=OpenSky%20Privacy">support@simplemaf.com</a>.</p>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p>© 2026 Mohamed Farah · <a href="index.html">Support</a> · Fraunces typeface under the SIL Open Font License.</p>
+</footer>
+</body>
+</html>
